@@ -1,0 +1,13 @@
+document.addEventListener("DOMContentLoaded", function() {
+  const years = document.querySelectorAll('.year');
+
+  years.forEach(year => {
+    const yearHeader = year.querySelector('h2');
+    const courseList = year.querySelector('.course-list');
+    
+    yearHeader.addEventListener('click', () => {
+      // Toggle the course list visibility
+      courseList.classList.toggle('show');
+    });
+  });
+});
